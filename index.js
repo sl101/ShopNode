@@ -23,7 +23,6 @@ app.use(errorHandler);
 const start = async () => {
 	try {
 		dbConnect();
-		app.get("Server start");
 		app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 	} catch (e) {
 		console.log("Start server error: " + e);
